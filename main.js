@@ -60,7 +60,7 @@ var PageNotFound = React.createClass({displayName: "PageNotFound",
 
 var routes = (
     React.createElement(Route, {name: 'app', path: '/', handler: App},
-        React.createElement(Route, {name: 'login', path: 'login', handler: PageLogin}),
+        React.createElement(Route, {name: 'login', path: '\#\!login', handler: PageLogin}),
         React.createElement(Route, {name: 'turbochat', path: 'turbochat', handler: PageTurboChat}),
         //React.createElement(DefaultRoute, {name: 'default-route', handler: PageTurboChat}),
         React.createElement(NotFoundRoute, {name: 'page-not-found', handler: PageNotFound})
